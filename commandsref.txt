@@ -16,3 +16,101 @@ apt-cache policy docker-ce
 sudo apt install docker-ce -y
 
 sudo systemctl status docker
+
+whereis docker
+  347  docker images
+  348  docker pull hello-worls
+  349  docker pull hello-world
+  350  docker images
+  351  docker run hello-world
+  352  docker images
+  353  docker pull busybox
+  354  docker pull alpine
+  355  docker images
+  356  docker run -it alpine sh
+  357  docker ps
+  358  docker run -d alpine sleep 21
+  359  docker run -d alpine sleep 23
+  360  docker run -d alpine sleep 25
+  361  docker run -d --name alpine1 alpine sleep 3600
+  362  docker run -d --name alpine2 alpine sleep 3600
+  363  docker exec -it alpine1 sh
+  364  docker exec -it alpine2 sh
+  365  docker ps
+  366  docker ps -a
+  367  docker rm bd
+  368  docker ps -a
+  369  docker ps -a |wc -l
+  370  docker ps -aq
+  371  docker rm $(docker ps -aq)
+  372  docker ps -aq
+  373  docker ps -a |wc -l
+  374  docker ps -a
+  375  docker images
+  376  history
+  377  docker images
+  378  docker run -it --name nandini alpine sh
+  379  docker ps -a
+  380  docker diff dff031940d52
+  381  docker ps -a
+  382  docker start nandini
+  383  docker commit dff031940d52 myalpineimage1
+  384  docker images
+  385  docker tag myalpineimage1 nandini151807/myalpineimage1
+  386  docker images
+  387  docker login
+  388  docker push nandini151807/myalpineimage1
+  389  docker images
+  390  docker pull harshithagutta17/harshitha3
+  391  docker images
+  392  docker run -it --name harshi harshithagutta17/harshitha3 sh
+  393  docker images
+  394  docker run python
+  395  docker images
+  396  docker run -it --name py1 python bash
+  397  history
+  398  docker ps -a
+  399  docker rm $(docker ps -aq)
+  400  docker ps -a
+  401  docker stop dff031940d52
+  402  docker ps -a
+  403  docker rm $(docker ps -aq)
+  404  docker images
+  405  docker rmi $(docker images -q)
+  406  docker images
+  407  docker rmi myalpineimage1
+  408  docker images
+  409  docker rmi nandini151807/myalpineimage
+  410  docker rmi nandini151807/myalpineimage1
+  411  docker rmi alpine
+  412  docker images
+  413  docker run centos
+  414  docker images
+  415  docker exec -it mycentos sh
+  416  docker exec -it mycentos centos sh
+  417  docker run -it --name cent1 centos sh
+  418  docker tag cent1 nandini151807/cent1
+  419  docker images
+  420  docker tag centos nandini151807/cent1
+  421  docker images
+  422  docker tag centos nandini151807/centosnov22:1.0.1
+  423  docker images
+  424  docker push nandini151807/centosnov22
+  425  docker login
+  426  docker push nandini151807/centosnov22
+  427  docker push nandini151807/cent1
+  428  docker images
+  429  docker push nandini151807/centosnov22:1.0.1
+  430  docker ps -a
+  431  docker start cent1
+  432  docker attach cent1
+  433  docker diff cent1
+  434  docker commit cent1
+  435  docker commit cent1 nandini151807/cent1.0.1
+  436  docker images
+  437  docker push nandini151807/cent1.0.1
+  438  docker run prudhviraj75/centosnov22:1.0.1
+  439  docker images
+  440  docker run -it --name novcent prudhviraj75/centosnov22 sh
+  441  docker run -it --name novcent prudhviraj75/centosnov22:1.0.1 sh
+  442  history
