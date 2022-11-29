@@ -1,0 +1,18 @@
+#create a new folder "docker" /home/student >>open in vscode
+Install Docker on Ubuntu 20.04
+https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04
+#1 apt update
+sudo apt update
+#Run the following command to allow Ubuntu to access the Docker repositories over HTTPS:
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+
+#
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+apt-cache policy docker-ce
+
+sudo apt install docker-ce -y
+
+sudo systemctl status docker
