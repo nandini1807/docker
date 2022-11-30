@@ -1,0 +1,28 @@
+docker rm $(docker ps -aq)
+  477  docker ps -a
+  478  docker images
+  479  docker rmi $(docker images q)
+  480  docker rmi -f $(docker images q)
+  481  docker rmi -f $(docker images aq)
+  482  docker rmi -f $(docker images -aq)
+  483  docker images
+  484  docker ps -a
+  485  ls
+  486  mkdir build1
+  487  cd build1/
+  488  toucn Dockerfile
+  489  touch Dockerfile
+  490  touch sample.txt
+  491  docker build -t nandini151807/bb1 .
+  492  docker build -t nandini151807/bb1
+  493  docker build -t nandini151807/bb1 .
+  494  docker images
+  495  docker run -it --name bb1 nandini151807/bb1 sh
+  496  docker build -t nandini151807/bb1:1.2
+  497  docker build -t nandini151807/bb1:1.2 .
+  498  docker run -it --name bb2 nandini151807/bb1:1.2 sh
+  499  docker images
+  500  docker build -t nandini151807/bb1:1.3 .
+  501  docker run -it --name bb3 nandini151807/bb1:1.3 sh
+  502  docker images
+  503  history
